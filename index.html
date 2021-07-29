@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Interview Experiences of top tech companies for practice</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!-- Icons and fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Stylesheet -->
+	<link href="src/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navbar -->		
+	<div class="nav-wrapper">
+		<nav class="navbar fixed-top">
+			<div class="navbar-brand nav-logo">
+				<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/codestudio-logo.svg" alt="Company Logo">
+			</div>
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="nav me-auto text-center">
+				<li class="px-2 nav-item black active"><a href="#">Interview Experiences</a></li>
+				<li class="px-2 nav-item black"><a href="#">Practice Interview Problems</a></li>
+				<li class="px-2 nav-item black dropdown">
+					<a href="#" class="dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">Top Problem List</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+						<li><a href="#" class="dropdown-item black">Striver SDE Sheet Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+						<li><a href="#" class="dropdown-item black">Top Trees Interview Questions</a></li>
+					</ul>
+				</li>
+				<li class="px-2 nav-item black"><a href="#">Resources</a></li>
+				<li class="px-2 nav-item black"><a href="#">Guided Path</a></li>
+				<li class="px-2 nav-item login">
+					<button class="btn-orange px-4 py-2 rounded">Login</button>
+				</li>
+			</ul>
+			<div class="login-btn me-4">
+				<button class="btn-orange px-4 py-2 rounded">Login</button>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<!-- Left division -->
+			<div class="left col-lg-8 col-md-12 col-sm-12">
+				<section>
+					<h3><b>EXPERIENCES OF POPULAR COMPANIES</b></h3>
+					<div class="floating-cards">
+						<div class="card company-card shadow-sm"><img src="https://files.codingninjas.in/amazon-ps-4659.svg" alt="Amazon"></div>
+						<div class="card company-card shadow-sm"><img src="https://files.codingninjas.in/samsung-ps-4658.svg" alt="Samsung"></div>
+						<div class="card company-card shadow-sm"><img src="https://files.codingninjas.in/microsoft-ps-4657.svg" alt="Microsoft"></div>
+						<div class="card company-card shadow-sm"><img src="https://files.codingninjas.in/goldman-ps-4656.svg" alt="Goldman Sachs"></div>
+					</div>
+				</section>
+				<section>
+					<div class="feed-title">
+						<h3><b>INTERVIEW EXPERIENCES</b></h3>
+						<div class="orange"><b>Share your Interview Experience</b></div>
+					</div>
+					<div class="filters">
+						<div class="filter company">
+							<span class="material-icons">business</span>Company<img  class="more-options" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg">
+							<div class="hide card rounded p-3 my-2 options">
+								<div class="d-flex justify-content-between">
+									<input type="search rounded"><span class="orange close ps-3">close</span>
+								</div>
+								<div class="companies d-flex justify-content-start" id="companies">
+									<div class="filter-item rounded px-2 py-1 m-1" onclick="filterSelection('goldman-sachs')">Goldman Sachs<!--<span class="material-icons plus">add</span><span class="material-icons minus hide">remove</span>--></div>
+									<div class="filter-item rounded px-2 py-1 m-1" onclick="filterSelection('amazon')">Amazon<!--<span class="material-icons plus">add</span><span class="material-icons minus hide">remove</span>--></div>
+									<div class="filter-item rounded px-2 py-1 m-1" onclick="filterSelection('microsoft')">Microsoft<!--<span class="material-icons plus">add</span><span class="material-icons minus hide">remove</span>--></div>
+									<div class="filter-item rounded px-2 py-1 m-1" onclick="filterSelection('walmart')">Walmart<!--<span class="material-icons plus">add</span><span class="material-icons minus hide">remove</span>--></div>
+									<div class="filter-item rounded px-2 py-1 m-1 bg-orange" onclick="filterSelection('all')">All<!--<span class="material-icons plus">add</span><span class="material-icons minus hide">remove</span>--></div>
+								</div>
+							</div>
+						</div>
+						<div class="filter role">
+							<span class="material-icons">laptop</span>Role<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg">
+						</div>
+						<div class="filter place">
+							<span class="material-icons">place</span>Location<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg">
+						</div>
+						<div class="filter other">
+							<span class="material-icons">tune</span>More Filters<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/filter-down-arrow.svg">
+						</div>
+						
+						<!-- <p><span class="material-icons">business</span>Company<span class="material-icons">expand_more</span></p>
+						<p><span class="material-icons">laptop</span>Role<span class="material-icons">expand_more</span></p>
+						<p><span class="material-icons">place</span>Location<span class="material-icons">expand_more</span></p>
+						<p><span class="material-icons">tune</span>More Filters<span class="material-icons">expand_more</span></p> -->
+					</div>
+					<div class="feed">
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv goldman-sachs">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content ">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Goldman Sachs | New Analyst | Fresher | Feb 2021</h6>
+											<img src="https://files.codingninjas.in/goldman-ps-4656.svg" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Anonymous </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">Off Campus</div>
+													<div class="details">B.R. Ambethkar University Of ...</div>
+													<div class="details">8.39 cgpa</div>
+													<div class="details">3 rounds</div>
+													<div class="details">6 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv walmart">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Walmart | Application Development Asociate | Fresher | May 2021</h6>
+											<img src="https://files.codingninjas.in/0000000000001239.png" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Swaroop Shingote </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">Off Campus</div>
+													<div class="details">Shri Guru Gobind University Of ...</div>
+													<div class="details">7.08 cgpa</div>
+													<div class="details">3 rounds</div>
+													<div class="details">4 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv amazon">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content ">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | SDE - 1 | Fresher | Feb 2021</h6>
+											<img src="https://files.codingninjas.in/amazon-ps-4659.svg" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">On Campus</div>
+													<div class="details">DTU</div>
+													<div class="details">5 rounds</div>
+													<div class="details">12 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv microsoft">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content ">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Microsoft | SDE - 1 | Fresher | Feb 2021</h6>
+											<img src="https://files.codingninjas.in/microsoft-ps-4657.svg" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">On Campus</div>
+													<div class="details">NSIT</div>
+													<div class="details">8.45 cgpa</div>
+													<div class="details">2 rounds</div>
+													<div class="details">5 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv walmart">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Walmart | SDE Intern | Fresher | April 2021</h6>
+											<img src="https://files.codingninjas.in/0000000000001239.png" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Anonymous </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">Off Campus</div>
+													<div class="details">J.C. Bose University Of ...</div>
+													<div class="details">9.39 cgpa</div>
+													<div class="details">5 rounds</div>
+													<div class="details">12 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2 filterDiv amazon">
+							<div class="row post">
+								<div class="col-lg-1 col-md-1 col-sm-1 upvote text-center">
+									<div><span class="material-icons up-arrow">arrow_drop_up</span></div>
+									<div><b>14</b></div>
+									<div>Upvote</div>
+								</div>
+								<div class="col-lg-11 col-md-11 col-sm-11 card-content ">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | SDE - 1 | Fresher |  Jul 2021</h6>
+											<img src="https://files.codingninjas.in/amazon-ps-4659.svg" class="feed-company-img" alt="">
+										</div>
+										<div class="row">
+											<div class="col-lg-1 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-3-9525.svg">
+											</div>
+											<div class="col-lg-11 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Nehali Acharya </b></div>
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/outcome-selected.svg"><b>SELECTED</b></span></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">Off Campus</div>
+													<div class="details">3 rounds</div>
+													<div class="details">4 coding problems</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow upvote-inline"><span class="material-icons">arrow_drop_up</span> Upvote</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"> 549 views</div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"> 4 comments</div>
+										</div>
+										<div>
+											<div class="gray published">Published on 9th Jul 2021</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-end">
+					<nav aria-label="Page Navigation">
+						<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link btn-orange"><span class="material-icons">chevron_left</span></a>
+						</li>
+						<li class="pageno text-muted">
+							<b>Page <input type="number" class="pageno-input"> of <span class="total-pages">99</span></b>
+						</li>
+						<li class="page-item">
+							<a class="page-link btn-orange" href="#"><span class="material-icons">chevron_right</span></a>
+						</li>
+						</ul>
+					</nav>
+					</div>
+				</section>
+			</div>
+
+			<!-- Right Division -->
+			<div class="right col-lg-4 col-md-12 col-sm-12">
+				<section>
+					<h3><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/calendar.svg"> Upcoming Events</h3>
+					<div class="card event-card">
+						<img src="https://files.codingninjas.in/desktop-11769.jpg" class="card-img-top" alt="Event-Banner">
+						<div class="card-body">
+						<h5 class="card-title"><b>Amazon Mock Tests and Masterclass</b></h5>
+						<p class="card-text">
+							<span class="text-muted">starts</span><br>
+							<span><b>7PM, 31 July 2021</b></span>
+						</p>
+						<div>
+							<img src="https://files.codingninjas.com/ninja-user-3-9525.svg" class="floating-profiles profile" alt="">
+							<img src="https://files.codingninjas.com/ninja-user-1-9523.svg" class="floating-profiles profile" alt="">
+							<img src="https://files.codingninjas.com/ninja-user-2-9524.svg" class="floating-profiles profile" alt="">
+							<img src="https://files.codingninjas.com/ninja-user-3-9525.svg" class="floating-profiles profile" alt="">
+							<img src="https://files.codingninjas.com/ninja-user-1-9523.svg" class="floating-profiles profile" alt="">
+						</div>
+						<br><br>
+						<p>and <b>1563</b> others are participating <span><a href="#" class="orange"><b>Register Now</b></a></span></p>
+						</div>
+					</div>
+				</section>
+				<hr>
+				<section>
+					<h3><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/puzzle.svg"> Top Interview Experiences </h3>
+					<div>					
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2">
+							<div class="row post">
+								<div class="col-12 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | Fresher</h6>
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-1-9523.svg">
+											</div>
+											<div class="col-lg-10 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">12 months ago</div>
+													<div class="details">SDE-2</div>
+													<div class="details">Hyderabad</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow"><span class="material-icons">arrow_drop_up</span><b>Upvote</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"><b> 340 views</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"><b> 6 comments</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2">
+							<div class="row post">
+								<div class="col-12 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | Fresher</h6>
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+											</div>
+											<div class="col-lg-10 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">12 months ago</div>
+													<div class="details">SDE-2</div>
+													<div class="details">Hyderabad</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow"><span class="material-icons">arrow_drop_up</span><b>Upvote</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"><b> 340 views</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"><b> 6 comments</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2">
+							<div class="row post">
+								<div class="col-12 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | Fresher</h6>
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+											</div>
+											<div class="col-lg-10 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">12 months ago</div>
+													<div class="details">SDE-2</div>
+													<div class="details">Hyderabad</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow"><span class="material-icons">arrow_drop_up</span><b>Upvote</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"><b> 340 views</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"><b> 6 comments</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2">
+							<div class="row post">
+								<div class="col-12 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | Fresher</h6>
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-1-9523.svg">
+											</div>
+											<div class="col-lg-10 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">12 months ago</div>
+													<div class="details">SDE-2</div>
+													<div class="details">Hyderabad</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow"><span class="material-icons">arrow_drop_up</span><b>Upvote</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"><b> 340 views</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"><b> 6 comments</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card mb-lg-3 mb-md-3 mb-sm-2">
+							<div class="row post">
+								<div class="col-12 card-content">
+									<div class="feed-inner-card">
+										<div class="experience-title">
+											<h6>Amazon | Fresher</h6>
+										</div>
+										<div class="row">
+											<div class="col-lg-2 col-md-1 col-sm-1">
+												<img class="feed-profile" src="https://files.codingninjas.com/ninja-user-2-9524.svg">
+											</div>
+											<div class="col-lg-10 col-md-11 col-sm-11">
+												<div class="user-details">
+													<div><b>Vandana Singh </b></div>
+												</div>
+												<div class="experience-details">
+													<div class="details">12 months ago</div>
+													<div class="details">SDE-2</div>
+													<div class="details">Hyderabad</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-muted post-views border-top-gray">
+										<div class="post-views">
+											<div class="gray up-arrow"><span class="material-icons">arrow_drop_up</span><b>Upvote</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/views.svg"><b> 340 views</b></div>
+											<div class="gray"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/comments.svg"><b> 6 comments</b></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+		</div>	
+	</div>
+			<!-- Categories -->
+		<div class="courses">
+			<section class="container">
+					<table>
+						<tr>
+							<td align="right">Categories : </td>
+							<td align="left" class="categories">
+								<a href="#" class="orange-link">Courses for Begginers</a> | 
+								<a href="#" class="orange-link">Java Foundation with data structure</a> | 
+								<a href="#" class="orange-link">Python Foundation with data structure</a> | 
+								<a href="#" class="orange-link">Web Development Courses</a> | 
+								<a href="#" class="orange-link">Data Science & Machine Learning Courses</a> | 
+								<a href="#" class="orange-link">Android App Development Courses</a> | 
+								<a href="#" class="orange-link">Courses for interview preparation</a> | 
+							</td>
+						</tr>
+						<tr>
+							<td align="right">Popular Courses : </td>
+							<td align="left" class="categories">
+								<a href="#" class="orange-link">C++ Foundation with Data Structures</a> | 
+								<a href="#" class="orange-link">Java Foundation with Data Structures</a> | 
+								<a href="#" class="orange-link">Python Foundation with Data Structures</a> | 
+								<a href="#" class="orange-link">Competitive Programming</a> | 
+								<a href="#" class="orange-link">Full Stack Web Development</a> | 
+							</td>
+						</tr>
+						<tr>
+							<td align="right">Carrer Tracks : </td>
+							<td align="left" class="categories">
+								<a href="#" class="orange-link">Ninja Machine Learning Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Node JS + React Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Machine Learning Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Android Learning Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Competitive Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Wb Development Engineer Career Track</a> | 
+								<a href="#" class="orange-link">Ninja Data Science Engineer Career Track</a> | 
+							</td>
+						</tr>
+					</table>
+			</section>
+		</div>
+
+		<div class="footer text-white">
+			<div class="container footer-links">
+				<div class="row">
+					<div class="col-lg-3 col-md-12 col-sm-12 footer-margin-bottom my-2">
+						<img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/codestudio-by-CN-white-logo.svg">
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-12 my-3">
+						<p><b>CODING NINJAS</b></p>
+						<div>
+							<div class="my-1"><a href="#" class="orange-link">About Us</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Press</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Privacy Policy</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Terms & Conditions</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Bug Bounty</a></div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-12 my-3">
+						<p><b>PRODUCTS</b></p>
+						<div>
+							<div class="my-1"><a href="#" class="orange-link">Problem Listing</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Interview Preparation</a></div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-12 footer-margin-bottom my-3">
+						<p><b>COMMUNITY</b></p>
+						<div>
+							<div class="my-1"><a href="#" class="orange-link">Code Studio</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Blog</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Events</a></div>
+							<div class="my-1"><a href="#" class="orange-link">Campus Ninjas</a></div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-12 col-sm-12 my-3">
+						<p><b>FOLLOW US ON</b></p>
+						<div class="social-icons">
+							<div class="my-1 me-2"><a href="#"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/instagram-outlined.svg" class="socials"></a></div>
+							<div class="my-1 me-2"><a href="#"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/twitter-outlined.svg" class="socials"></a></div>
+							<div class="my-1 me-2"><a href="#"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/youtube-outlined.svg" class="socials"></a></div>
+							<div class="my-1 me-2"><a href="#"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/facebook-outlined.svg" class="socials"></a></div>
+							<div class="my-1 me-2"><a href="#"><img src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/linkedin-outlined.svg" class="socials"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid bg-light text-black-50">
+			<div class="p-3 payment">
+				<!-- <div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<p class="black ms-2"><b>We accept payment using: </b></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<img class="payment-img"  src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/visa.png" alt="visa">
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/paypal.png" alt="">
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upi.png" alt="">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/no-cost-emi.svg" alt="">						
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/images/safe-payment.png" alt="visa">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12">
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/ssl-secured.svg" alt="">
+						<img class="payment-img" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/razorpay.png" alt="">
+					</div>
+				</div> -->
+						<span class="pay black ms-2"><b>We accept payment using: </b></span>
+						<img class="pay payment-img me-2"  src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/visa.png" alt="visa">
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/paypal.png" alt="">
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/upi.png" alt="">
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/no-cost-emi.svg" alt="">						
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/images/safe-payment.png" alt="visa">
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/ssl-secured.svg" alt="">
+						<img class="pay payment-img me-2" src="https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/razorpay.png" alt="">
+			</div>
+			</div>
+		</div>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="src/index.js"></script>
+</body>
+
+</html>

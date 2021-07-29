@@ -1,0 +1,27 @@
+logo: https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/codestudio-logo.svg
+
+// Companies images
+Amazon : https://files.codingninjas.in/amazon-ps-4659.svg
+Samsung : https://files.codingninjas.in/samsung-ps-4658.svg
+Microsoft : https://files.codingninjas.in/microsoft-ps-4657.svg
+Goldman Sachs : https://files.codingninjas.in/goldman-ps-4656.svg
+
+Walmart : https://files.codingninjas.in/0000000000001239.png
+OLA : https://files.codingninjas.in/ola-6618.jpg
+VMware : https://files.codingninjas.in/vmware-8949.png
+
+// Upcoming Events
+https://files.codingninjas.in/desktop-11769.jpg
+
+// Profile icons
+N1: https://files.codingninjas.com/ninja-user-3-9525.svg
+N2: https://files.codingninjas.com/ninja-user-2-9524.svg
+N3: https://files.codingninjas.com/ninja-user-1-9523.svg
+
+// COLORS
+orange: #FB8F53
+purple: #443A63
+
+// footer-images
+https://s3-ap-southeast-1.amazonaws.com/codestudio.codingninjas.com/codestudio/assets/icons/codestudio-by-CN-white-logo.svg
+
